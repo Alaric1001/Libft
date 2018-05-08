@@ -15,10 +15,8 @@
 char	ft_getmissing_quote(char *sentence)
 {
 	char	in_quote;
-	int		ignore;
 
 	in_quote = 0;
-	ignore = 0;
 	while (sentence && *sentence)
 	{
 		if (*sentence == '\\' && in_quote == 0)
