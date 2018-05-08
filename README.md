@@ -1,2 +1,2 @@
-# MyLibft
-Some basic function from the C library, I may add some.
+# Alaric's Libft
+The Library on which every 42 projects are based.
