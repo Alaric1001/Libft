@@ -12,7 +12,7 @@
 
 #include "string/wstring.h"
 
-size_t	ft_wstrlen(wchar_t *str)
+size_t	ft_wstrlen(wchar_t const *str)
 {
 	int ret;
 

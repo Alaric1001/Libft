@@ -14,9 +14,9 @@
 
 #include "color/ansi-colors.h"
 
-int		ft_putcolored(char *s, char *code, int fd)
+int		ft_putcolored(char const *s, char const *code, int fd)
 {
-	char	*color;
+	char const	*color;
 
 	if (!s || !code)
 		return (-1);

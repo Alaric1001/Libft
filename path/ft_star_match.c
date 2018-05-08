@@ -10,9 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "path/path.h"
+
 #include "string/string.h"
 
-static int	get_no_star_len(char *s)
+static int	get_no_star_len(char const *s)
 {
 	int ret;
 
@@ -22,7 +24,7 @@ static int	get_no_star_len(char *s)
 	return (ret);
 }
 
-static int	special_case(char *s, char *patt)
+static int	special_case(char const *s, char const *patt)
 {
 	if (s[0] == '.' && patt[0] != '.')
 		return (1);
@@ -31,7 +33,7 @@ static int	special_case(char *s, char *patt)
 	return (0);
 }
 
-int			ft_star_match(char *s, char *patt)
+int			ft_star_match(char const *s, char const *patt)
 {
 	int tmp_len;
 

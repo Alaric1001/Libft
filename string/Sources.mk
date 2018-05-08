@@ -14,7 +14,6 @@ OBJ_FILES_string  :=  ft_atoi.o \
                ft_iswellquoted.o \
                ft_itoa.o \
                ft_removechar.o \
-               ft_star_match.o \
                ft_strappend.o \
                ft_strcappend.o \
                ft_strcat.o \

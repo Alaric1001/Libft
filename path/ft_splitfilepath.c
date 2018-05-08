@@ -15,10 +15,10 @@
 #include "string/string.h"
 #include "memory/memory.h"
 
-char	**ft_splitfilepath(char *file)
+char	**ft_splitfilepath(char const *file)
 {
-	char *tmp;
-	char **ret;
+	char const	*tmp;
+	char		**ret;
 
 	ret = ft_memalloc(sizeof(char*) * 3);
 	if (!ft_strchr(file, '/'))

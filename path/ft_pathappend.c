@@ -14,7 +14,7 @@
 
 #include <string/string.h>
 
-char	*ft_path_append(char *path, char *app)
+char	*ft_path_append(char const *path, char const *app)
 {
 	char *ret;
 

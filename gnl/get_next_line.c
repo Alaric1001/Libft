@@ -85,7 +85,7 @@ int			readline(int fd, t_list *lst, char **line)
 	return (1);
 }
 
-int			get_next_line(int const fd, char **line)
+int			get_next_line(int fd, char **line)
 {
 	static t_list	*lst = NULL;
 	t_list			*current;

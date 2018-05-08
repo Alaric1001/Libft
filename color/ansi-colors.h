@@ -31,6 +31,6 @@ typedef struct	s_conv {
 	char	*color;
 }				t_conv;
 
-char			*ft_getcolor(char *code);
+char const		*ft_getcolor(char const *code);
 
 #endif

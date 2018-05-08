@@ -14,7 +14,7 @@
 
 #include "string/wstring.h"
 
-void	ft_putwstr_fd(wchar_t *str, int fd)
+void	ft_putwstr_fd(wchar_t const *str, int fd)
 {
 	while (*str)
 	{

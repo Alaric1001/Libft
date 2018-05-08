@@ -12,7 +12,7 @@
 
 #include "string/string.h"
 
-int		ft_isstrnum(char *str)
+int		ft_isstrnum(char const *str)
 {
 	int neg;
 

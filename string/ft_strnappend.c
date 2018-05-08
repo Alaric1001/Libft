@@ -12,7 +12,7 @@
 
 #include "string/string.h"
 
-char	*ft_strnappend(char *dst, char *s, size_t n)
+char	*ft_strnappend(char *dst, char const *s, size_t n)
 {
 	char	*ret;
 	char	*tmp;

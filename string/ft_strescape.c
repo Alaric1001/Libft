@@ -12,7 +12,7 @@
 
 #include "string/string.h"
 
-static int	get_res_len(char *s, char *to_escape)
+static int	get_res_len(char const *s, char const *to_escape)
 {
 	int i;
 	int y;
@@ -32,7 +32,7 @@ static int	get_res_len(char *s, char *to_escape)
 	return (i);
 }
 
-static char is_toescape(char c, char *to_escape)
+static char is_toescape(char c, char const *to_escape)
 {
 	while (*to_escape)
 	{
@@ -45,7 +45,7 @@ static char is_toescape(char c, char *to_escape)
 	return (0);
 }
 
-char		*ft_strescape(char *s, char *to_escape)
+char		*ft_strescape(char const *s, char const *to_escape)
 {
 	char	*ret;
 	int		i;

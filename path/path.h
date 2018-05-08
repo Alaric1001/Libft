@@ -2,8 +2,8 @@
 #define FT_PATH_H
 
 
-char	*ft_path_append(char *path, char *app);
-char	**ft_splitfilepath(char *file);
-int		ft_star_match(char *str, char *pattern);
+char	*ft_path_append(char const *path, char const *app);
+char	**ft_splitfilepath(char const *file);
+int		ft_star_match(char const *str, char const *pattern);
 
 #endif 

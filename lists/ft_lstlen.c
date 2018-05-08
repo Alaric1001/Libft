@@ -12,10 +12,10 @@
 
 #include "lists/lists.h"
 
-size_t		ft_lstlen(t_list *lst)
+size_t		ft_lstlen(t_list const *lst)
 {
-	size_t	result;
-	t_list	*tmp;
+	size_t			result;
+	t_list const	*tmp;
 
 	tmp = lst;
 	result = 0;

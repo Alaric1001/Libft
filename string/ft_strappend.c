@@ -12,7 +12,7 @@
 
 #include "string/string.h"
 
-char	*ft_strappend(char *dst, char *src)
+char	*ft_strappend(char *dst, char const *src)
 {
 	if (!src)
 		return (dst);

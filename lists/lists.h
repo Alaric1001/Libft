@@ -20,7 +20,7 @@ void				ft_lstadd_back(t_list **lst, void *content, size_t size);
 void				ft_lstrev(t_list **lst);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-size_t				ft_lstlen(t_list *lst);
-void				ft_lstopnext(t_list *node, void (*del)(void*, size_t));
+size_t				ft_lstlen(t_list const *lst);
+void				ft_lstpopnext(t_list *node, void (*del)(void*, size_t));
 
 #endif 

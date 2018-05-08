@@ -23,6 +23,6 @@ typedef struct	s_content
 	char	*rest;
 }				t_content;
 
-int				get_next_line(int const fd, char **line);
+int				get_next_line(int fd, char **line);
 
 #endif

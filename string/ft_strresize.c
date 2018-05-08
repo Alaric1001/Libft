@@ -14,7 +14,7 @@
 
 #include "memory/memory.h"
 
-char	*ft_strresize(void *s, size_t size)
+char	*ft_strresize(char *s, size_t size)
 {
 	char	*res;
 
@@ -24,7 +24,7 @@ char	*ft_strresize(void *s, size_t size)
 		return (NULL);
 	ft_strcpy(res, s);
 	if (s)
-		ft_memdel(&s);
+		ft_strdel(&s);
 	s = NULL;
 	return (res);
 }

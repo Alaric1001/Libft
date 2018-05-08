@@ -16,13 +16,13 @@
 
 static char *g_queue = NULL;
 
-void	ft_writequeue(void)
+void	ft_flushqueue(void)
 {
 	ft_putstr(g_queue);
 	ft_strclr(g_queue);
 }
 
-void	ft_queuestr(char *str)
+void	ft_queuestr(char const *str)
 {
 	int cursor;
 	int i;
@@ -35,7 +35,7 @@ void	ft_queuestr(char *str)
 	{
 		if (cursor == QUEUE_SIZE)
 		{
-			ft_writequeue();
+			ft_flushqueue();
 			cursor = 0;
 		}
 		g_queue[cursor++] = str[i];
@@ -51,7 +51,7 @@ void	ft_queuechar(char c)
 	cursor = ft_strlen(g_queue);
 	if (cursor == QUEUE_SIZE)
 	{
-		ft_writequeue();
+		ft_flushqueue();
 		cursor = 0;
 	}
 	g_queue[cursor] = c;

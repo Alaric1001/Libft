@@ -17,7 +17,7 @@ int		ft_isprint(int c)
 	return (c >= ' ' && c <= '~');
 }
 
-int		ft_isstrprintable(char *str)
+int		ft_isstrprintable(char const *str)
 {
 	if (!str)
 		return (0);

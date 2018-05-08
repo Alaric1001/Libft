@@ -32,13 +32,13 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
 char	*ft_strrev(char *s);
-char	*ft_strappend(char *dst, char *src);
+char	*ft_strappend(char *dst, char const *src);
 char	*ft_strcappend(char *dst, char c);
-char	*ft_strnappend(char *dst, char *s, size_t n);
+char	*ft_strnappend(char *dst, char const *s, size_t n);
 char	*ft_strncappend(char *dst, char c, size_t n);
 char	*ft_removechar(char *dst, size_t loc);
-char	*ft_strescape(char *s, char *to_escape);
-char	*ft_strresize(void *s, size_t size);
+char	*ft_strescape(char const *s, char const *to_escape);
+char	*ft_strresize(char *s, size_t size);
 
 /*
 ** Integer<=>String
@@ -62,7 +62,7 @@ int					ft_tolower(int c);
 int					ft_isspace(int c);
 int					ft_isupper(int c);
 int					ft_islower(int c);
-int					ft_isstrnum(char *str);
-int					ft_isstrprintable(char *str);
+int					ft_isstrnum(char const *str);
+int					ft_isstrprintable(char const *str);
 
 #endif 

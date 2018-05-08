@@ -14,7 +14,7 @@
 
 #include <unistd.h>
 
-void	ft_putnchar(char *str, size_t n)
+void	ft_putnchar(char const *str, size_t n)
 {
 	write(1, str, n);
 }

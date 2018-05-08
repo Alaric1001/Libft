@@ -13,7 +13,7 @@
 #include "string/string.h"
 #include "ansi-colors.h"
 
-char	*ft_getcolor(char *code)
+char const	*ft_getcolor(char const *code)
 {
 	static const t_conv		conv[] = {
 		{"RESET", RESET},

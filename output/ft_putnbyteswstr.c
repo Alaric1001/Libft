@@ -14,7 +14,7 @@
 
 #include "string/wstring.h"
 
-int		ft_putnbyteswstr(wchar_t *str, size_t n)
+int		ft_putnbyteswstr(wchar_t const *str, size_t n)
 {
 	size_t	current_size;
 	int		ret;
