@@ -6,7 +6,7 @@
 /*   By: asenat <asenat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/15 14:57:11 by asenat            #+#    #+#             */
-/*   Updated: 2017/06/15 16:38:41 by asenat           ###   ########.fr       */
+/*   Updated: 2018/05/09 15:01:48 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static int	get_res_len(char const *s, char const *to_escape)
 	return (i);
 }
 
-static char is_toescape(char c, char const *to_escape)
+static char	is_toescape(char c, char const *to_escape)
 {
 	while (*to_escape)
 	{

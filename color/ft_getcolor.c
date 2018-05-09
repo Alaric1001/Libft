@@ -6,12 +6,13 @@
 /*   By: asenat <asenat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/17 11:49:42 by asenat            #+#    #+#             */
-/*   Updated: 2018/05/08 17:22:51 by asenat           ###   ########.fr       */
+/*   Updated: 2018/05/09 14:19:01 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "color/color.h"
+
 #include "string/string.h"
-#include "ansi-colors.h"
 
 char const	*ft_getcolor(char const *code)
 {

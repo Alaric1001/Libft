@@ -6,13 +6,13 @@
 /*   By: asenat <asenat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 15:50:19 by asenat            #+#    #+#             */
-/*   Updated: 2018/05/08 17:46:59 by asenat           ###   ########.fr       */
+/*   Updated: 2018/05/09 14:20:18 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "output/output.h"
 
-#include "color/ansi-colors.h"
+#include "color/color.h"
 
 int		ft_putcolored(char const *s, char const *code, int fd)
 {

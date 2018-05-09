@@ -1,7 +1,19 @@
-#ifndef FT_OUTPUT_H
-#define FT_OUTPUT_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   output.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/09 14:59:25 by asenat            #+#    #+#             */
+/*   Updated: 2018/05/09 14:59:26 by asenat           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <wchar.h>
+#ifndef OUTPUT_H
+# define OUTPUT_H
+
+# include <wchar.h>
 
 # define QUEUE_SIZE 75
 
@@ -27,4 +39,4 @@ void	ft_queuestr(char const *s);
 void	ft_queuenbr(int nbr);
 void	ft_flushqueue(void);
 
-#endif 
+#endif

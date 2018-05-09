@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ansi-colors.h                                      :+:      :+:    :+:   */
+/*   color.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asenat <asenat@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/17 11:44:19 by asenat            #+#    #+#             */
-/*   Updated: 2018/05/07 18:03:19 by asenat           ###   ########.fr       */
+/*   Created: 2018/05/09 14:19:24 by asenat            #+#    #+#             */
+/*   Updated: 2018/05/09 14:19:46 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_COLORS_H
-# define FT_COLORS_H
+#ifndef COLOR_H
+# define COLOR_H
 
 # define COLOR_NB	11
 # define RESET		"\033[0m"

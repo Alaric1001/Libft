@@ -1,5 +1,17 @@
-#ifndef FT_LISTS_H
-#define FT_LISTS_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   lists.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/09 14:21:34 by asenat            #+#    #+#             */
+/*   Updated: 2018/05/09 14:22:20 by asenat           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef LISTS_H
+# define LISTS_H
 
 # include <stdlib.h>
 
@@ -23,4 +35,4 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 size_t				ft_lstlen(t_list const *lst);
 void				ft_lstpopnext(t_list *node, void (*del)(void*, size_t));
 
-#endif 
+#endif

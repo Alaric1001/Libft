@@ -1,7 +1,19 @@
-#ifndef FT_MEMORY_H
-#define FT_MEMORY_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   memory.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/09 14:23:09 by asenat            #+#    #+#             */
+/*   Updated: 2018/05/09 14:23:35 by asenat           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <stdlib.h>
+#ifndef MEMORY_H
+# define MEMORY_H
+
+# include <stdlib.h>
 
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
@@ -15,4 +27,4 @@ void	ft_bzero(void *s, size_t n);
 void	ft_doublearraydel(void ***array);
 void	ft_doublearrayndel(void ***array, size_t n);
 
-#endif 
+#endif

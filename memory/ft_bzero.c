@@ -6,12 +6,11 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 11:10:39 by asenat            #+#    #+#             */
-/*   Updated: 2016/11/04 11:13:53 by asenat           ###   ########.fr       */
+/*   Updated: 2018/05/09 14:22:47 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "memory/memory.h"
-
 
 void	ft_bzero(void *s, size_t n)
 {

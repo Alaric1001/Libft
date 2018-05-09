@@ -1,7 +1,17 @@
-// (C) Copyright 2016-2018 Délypse
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   string.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/09 15:02:38 by asenat            #+#    #+#             */
+/*   Updated: 2018/05/09 15:03:02 by asenat           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#ifndef FT_STRING_H
-# define FT_STRING_H
+#ifndef STRING_H
+# define STRING_H
 
 # include <unistd.h>
 
@@ -44,25 +54,25 @@ char	*ft_strresize(char *s, size_t size);
 ** Integer<=>String
 */
 
-int					ft_atoi(char const *s);
-char				*ft_itoa(long long n);
-char				*ft_uitoa(unsigned long long nb);
+int		ft_atoi(char const *s);
+char	*ft_itoa(long long n);
+char	*ft_uitoa(unsigned long long nb);
 
 /*
 ** Char utils
 */
 
-int					ft_isascii(int c);
-int					ft_isalpha(int c);
-int					ft_isdigit(int c);
-int					ft_isprint(int c);
-int					ft_isalnum(int c);
-int					ft_toupper(int c);
-int					ft_tolower(int c);
-int					ft_isspace(int c);
-int					ft_isupper(int c);
-int					ft_islower(int c);
-int					ft_isstrnum(char const *str);
-int					ft_isstrprintable(char const *str);
+int		ft_isascii(int c);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
+int		ft_isalnum(int c);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
+int		ft_isspace(int c);
+int		ft_isupper(int c);
+int		ft_islower(int c);
+int		ft_isstrnum(char const *str);
+int		ft_isstrprintable(char const *str);
 
-#endif 
+#endif
