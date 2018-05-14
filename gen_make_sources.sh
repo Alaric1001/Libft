@@ -8,10 +8,10 @@ for i in $*; do
 	echo -e "## Auto generated make tool, don't edit manually.\n" > "${SOURCES_OUT}"
 	echo -n "OBJ_FILES_${i}  :=  " >> "${SOURCES_OUT}"
 
-	ls "$i"/*.c | # list all the .c in the current subdirectory
+	ls "$i"/*.c | # list all the C files in the current subdirectory
 	xargs -L1 basename | # just get the basename of these files
-	sed -e '$ ! s/$/ &\\/g' | # putting a backslash at the end of each lines except the last one
-	sed -e 's/\.c/\.o/g' | # replace .c to .o
+	sed -e '$ ! s/$/ &\\/g' | # set a backslash at the end of each lines except the last one
+	sed -e 's/\.c/\.o/g' | # *.c -> *.o
 	sed -e '2,$ s/^/&               /g' >> "${SOURCES_OUT}" #indent and output
 
 	echo -n 'OBJECTS   += $(patsubst %, ' >> "${SOURCES_OUT}"
