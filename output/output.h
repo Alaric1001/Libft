@@ -6,7 +6,7 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/09 14:59:25 by asenat            #+#    #+#             */
-/*   Updated: 2018/05/09 14:59:26 by asenat           ###   ########.fr       */
+/*   Updated: 2018/05/24 18:33:57 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define OUTPUT_H
 
 # include <wchar.h>
+# include <stdarg.h>
 
 # define QUEUE_SIZE 75
 
@@ -39,4 +40,5 @@ void	ft_queuestr(char const *s);
 void	ft_queuenbr(int nbr);
 void	ft_flushqueue(void);
 
+int		ft_printf(char const *format, ...);
 #endif
