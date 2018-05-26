@@ -10,6 +10,7 @@ OBJ_FILES_output  :=  ft_putchar.o \
                ft_putnbyteswstr.o \
                ft_putnchar.o \
                ft_putnstr.o \
+               ft_putnstr_fd.o \
                ft_putstr.o \
                ft_putstr_fd.o \
                ft_putwchar.o \
