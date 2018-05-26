@@ -1,6 +1,7 @@
 ## Auto generated make tool, don't edit manually.
 
-OBJ_FILES_output  :=  ft_putchar.o \
+OBJ_FILES_output  :=  ft_obuf.o \
+               ft_putchar.o \
                ft_putchar_fd.o \
                ft_putcolored.o \
                ft_putendl.o \
@@ -16,6 +17,5 @@ OBJ_FILES_output  :=  ft_putchar.o \
                ft_putwchar.o \
                ft_putwchar_fd.o \
                ft_putwstr.o \
-               ft_putwstr_fd.o \
-               ft_queue.o
+               ft_putwstr_fd.o
 OBJECTS   += $(patsubst %, output/$(OBJECT_DIR)/%, $(OBJ_FILES_output))

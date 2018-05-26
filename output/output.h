@@ -16,8 +16,6 @@
 # include <wchar.h>
 # include <stdarg.h>
 
-# define QUEUE_SIZE 75
-
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
@@ -35,11 +33,6 @@ void	ft_putwstr_fd(wchar_t const *str, int fd);
 void	ft_putwstr(wchar_t const *str);
 int		ft_putnbyteswstr(wchar_t const *str, size_t n);
 int		ft_putcolored(char const *s, char const *code, int fd);
-
-void	ft_queuechar(char s);
-void	ft_queuestr(char const *s);
-void	ft_queuenbr(int nbr);
-void	ft_flushqueue(void);
 
 int		ft_printf(char const *format, ...);
 #endif

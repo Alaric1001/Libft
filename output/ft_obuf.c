@@ -6,73 +6,58 @@
 /*   By: asenat <asenat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/09 15:08:23 by asenat            #+#    #+#             */
-/*   Updated: 2017/01/09 18:12:07 by asenat           ###   ########.fr       */
+/*   Updated: 2018/05/26 16:34:30 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "output/obuff.h"
+
 #include "output/output.h"
+#include "memory/memory.h"
 
-#include "string/string.h"
-
-static char *g_queue = NULL;
-
-void	ft_flushqueue(void)
+void	ft_flush_obuff(t_obuff *obuff)
 {
-	ft_putstr(g_queue);
-	ft_strclr(g_queue);
+	ft_putnstr_fd(obuff->buffer, LIBFT_OBUF_SIZE, obuff->fd);
+	ft_bzero(obuff->buffer, LIBFT_OBUF_SIZE);
+	obuff->cursor = 0;
 }
 
-void	ft_queuestr(char const *str)
+void	ft_add_str_to_obuff(char const *str, t_obuff *obuff)
 {
-	int cursor;
 	int i;
 
-	if (!g_queue)
-		g_queue = ft_strnew(QUEUE_SIZE);
-	cursor = ft_strlen(g_queue);
-	i = -1;
+	i = 0;
 	while (str[++i])
 	{
-		if (cursor == QUEUE_SIZE)
-		{
-			ft_flushqueue();
-			cursor = 0;
-		}
-		g_queue[cursor++] = str[i];
+		if (obuff->cursor == LIBFT_OBUF_SIZE)
+			ft_flush_obuff(obuff);
+		obuff->buffer[obuff->cursor++] = str[i++];
 	}
 }
 
-void	ft_queuechar(char c)
+void	ft_add_char_to_obuff(char c, t_obuff *obuff)
 {
-	int cursor;
-
-	if (!g_queue)
-		g_queue = ft_strnew(QUEUE_SIZE);
-	cursor = ft_strlen(g_queue);
-	if (cursor == QUEUE_SIZE)
-	{
-		ft_flushqueue();
-		cursor = 0;
-	}
-	g_queue[cursor] = c;
+	if (obuff->cursor == LIBFT_OBUF_SIZE)
+		ft_flush_obuff(obuff);
+	obuff->buffer[obuff->cursor] = c;
 }
 
-void	ft_queuenbr(int n)
+void	ft_add_int_to_obuff(int n, t_obuff *obuff)
 {
 	unsigned int i;
 
 	if (n < 0)
 	{
-		ft_queuechar('-');
+		ft_add_char_to_obuff('-', obuff);
 		i = -n;
 	}
 	else
 		i = n;
 	if (i >= 10)
 	{
-		ft_queuenbr((i / 10));
-		ft_queuenbr((i % 10));
+		ft_add_int_to_obuff((i / 10), obuff);
+		ft_add_int_to_obuff((i % 10), obuff);
 	}
 	else
-		ft_queuechar(i + '0');
+		ft_add_char_to_obuff(i + '0', obuff);
 }
