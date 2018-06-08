@@ -24,6 +24,8 @@ typedef struct	s_obuff
 	int		fd;
 }				t_obuff;
 
+typedef unsigned long uintmax_t;
+
 void			ft_flush_obuff(t_obuff *obuff);
 void			ft_add_char_to_obuff(char s, t_obuff *obuff);
 void			ft_add_str_to_obuff(char const *s, t_obuff *obuff);
