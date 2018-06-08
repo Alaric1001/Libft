@@ -32,7 +32,7 @@ PNAME		:= $(BLUE)$(NAME)$(RESET)
 
 ## Sources directories
 #
-SRC_DIRS	:= color gnl lists memory numeric output output/printf path string tree
+SRC_DIRS	:= color gnl lists memory numeric output path string tree
 #
 
 .PHONY: all
