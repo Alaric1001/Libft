@@ -1,7 +1,7 @@
 ## Auto generated make tool, don't edit manually.
 
-OBJ_FILES_lists  :=  ft_lstadd_back.o \
-               ft_lstadd.o \
+OBJ_FILES_lists  :=  ft_lstadd.o \
+               ft_lstadd_back.o \
                ft_lstdel.o \
                ft_lstdelone.o \
                ft_lstgetlast.o \

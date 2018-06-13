@@ -23,10 +23,11 @@ for i in $*; do
 	echo -e "## Auto generated make tool, don't edit manually.\n" > "${RULES_OUT}"
 	echo "${i}/\$(OBJECT_DIR)/%.o: ${i}/%.c" >> "${RULES_OUT}"
 	echo -e '\t$(COMP) $@ $<' >> "${RULES_OUT}"
-  for src in `ls "${i}"/*.c | xargs -L1 basename`; do
-    gcc -E -MT `echo "${i}"'/$(OBJECT_DIR)/'"${src}" | sed -e 's/\.c/\.o/g'` -MMD -MP -MF t.d "${i}"/"${src}" -I. > /dev/null &&
-    cat t.d >> "${RULES_OUT}" &&
-    rm -f t.d
-  done
-
+	for src in `ls "${i}"/*.c | xargs -L1 basename`; do
+	  gcc -E -MT `echo "${i}"'/$(OBJECT_DIR)/'"${src}" | sed -e 's/\.c/\.o/g'` -MMD -MP -MF t.d "${i}"/"${src}" -I. > /dev/null &&
+	  cat t.d >> "${RULES_OUT}"
+	done
+	awk 'NF && (!/:$/ || !seen[$0]++)' ${RULES_OUT} > t.d
+	cat t.d > ${RULES_OUT}
+	rm -f t.d
 done
