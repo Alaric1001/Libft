@@ -17,6 +17,11 @@
 
 void	ft_flush_obuff(t_obuff *obuff)
 {
+	size_t i;
+
+	i = 0;
+	while (i < LIBFT_OBUF_SIZE && obuff->buffer[i])
+		++i;
 	ft_putnstr_fd(obuff->buffer, LIBFT_OBUF_SIZE, obuff->fd);
 	ft_bzero(obuff->buffer, LIBFT_OBUF_SIZE);
 	obuff->cursor = 0;
