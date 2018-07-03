@@ -6,7 +6,7 @@
 #    By: asenat <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 17:26:46 by asenat            #+#    #+#              #
-#    Updated: 2018/05/24 18:38:19 by asenat           ###   ########.fr        #
+#    Updated: 2018/06/28 22:56:58 by asenat           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@
 NAME		:= libft.a
 CC 			:= gcc
 ARCH		:= ar rc
-CFLAGS 		:= -I. -Wall -Wextra -Werror
+CFLAGS 		:= -I. -Wall -Wextra -Werror -fPIC
 LLFLAGS 	:= 
 RM			:= rm -f
 OBJECT_DIR	:= obj
