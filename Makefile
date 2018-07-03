@@ -47,7 +47,7 @@ OBJ_DIRS	:= $(patsubst %, %/obj, $(SRC_DIRS))
 
 $(NAME): $(OBJ_DIRS) $(OBJECTS)
 	$(ARCH) $(NAME) $(OBJECTS)
-	@echo $(PNAME)$(GREEN) "generated !"$(RESET)
+	@echo -e $(PNAME)$(GREEN) "generated !"$(RESET)
 
 ## Including compilation rules
 #
@@ -65,7 +65,7 @@ clean:
 .PHONY: fclean
 fclean: clean
 	@$(RM) $(NAME)
-	@echo $(PNAME) "deleted."
+	@echo -e $(PNAME) "deleted."
 
 .PHONY: re
 re: fclean all
