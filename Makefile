@@ -6,7 +6,7 @@
 #    By: asenat <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 17:26:46 by asenat            #+#    #+#              #
-#    Updated: 2018/06/28 22:56:58 by asenat           ###   ########.fr        #
+#    Updated: 2018/09/07 15:43:57 by asenat           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ PNAME		:= $(BLUE)$(NAME)$(RESET)
 
 ## Sources directories
 #
-SRC_DIRS	:= color gnl lists memory numeric output path string tree
+SRC_DIRS	:= color gnl lists memory math output path string tree
 #
 
 .PHONY: all

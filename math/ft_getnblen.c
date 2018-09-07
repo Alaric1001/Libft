@@ -6,11 +6,11 @@
 /*   By: asenat <asenat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/09 13:16:11 by asenat            #+#    #+#             */
-/*   Updated: 2018/05/08 17:53:40 by asenat           ###   ########.fr       */
+/*   Updated: 2018/09/07 15:37:36 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "numeric/numeric.h"
+#include "math/math.h"
 
 size_t	ft_getnblen(unsigned long long n)
 {

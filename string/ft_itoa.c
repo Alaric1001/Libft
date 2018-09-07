@@ -6,13 +6,13 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 15:58:09 by asenat            #+#    #+#             */
-/*   Updated: 2018/05/08 17:54:31 by asenat           ###   ########.fr       */
+/*   Updated: 2018/09/07 15:44:50 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "string/string.h"
 
-#include "numeric/numeric.h"
+#include "math/math.h"
 
 char			*ft_itoa(long long n)
 {

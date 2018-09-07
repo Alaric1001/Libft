@@ -17,8 +17,8 @@ string/$(OBJECT_DIR)/ft_isupper.o: string/ft_isupper.c string/string.h
 string/$(OBJECT_DIR)/ft_iswellquoted.o: string/ft_iswellquoted.c \
   string/string.h
 string/$(OBJECT_DIR)/ft_itoa.o: string/ft_itoa.c string/string.h \
-  numeric/numeric.h
-numeric/numeric.h:
+  math/math.h
+math/math.h:
 string/$(OBJECT_DIR)/ft_removechar.o: string/ft_removechar.c \
   string/string.h
 string/$(OBJECT_DIR)/ft_strappend.o: string/ft_strappend.c \
