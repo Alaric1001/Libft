@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_obuff.h                                         :+:      :+:    :+:   */
+/*   obuff.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/26 16:21:07 by asenat            #+#    #+#             */
-/*   Updated: 2018/05/26 17:53:24 by asenat           ###   ########.fr       */
+/*   Updated: 2018/09/10 10:45:27 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ typedef struct	s_obuff
 	size_t	cursor;
 	int		fd;
 }				t_obuff;
-
-typedef unsigned long uintmax_t;
 
 void			ft_flush_obuff(t_obuff *obuff);
 void			ft_add_char_to_obuff(char s, t_obuff *obuff);
