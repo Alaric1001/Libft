@@ -56,6 +56,10 @@ for dir in args.directories:
         else:
             objects += format_c_file(file, len('OBJ_FILES_' +  dir + ' := ')) + '\n'
             deps += get_file_dependencies(dir, file)
+    if objects is None:
+        objects = ''
+    if deps is None:
+        deps = b''
     objects = objects[:len(objects) - 3] + '\n'
     write_sources(dir, objects, args)
     write_rules(dir, deps)
