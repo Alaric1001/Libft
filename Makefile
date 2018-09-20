@@ -6,7 +6,7 @@
 #    By: asenat <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 17:26:46 by asenat            #+#    #+#              #
-#    Updated: 2018/09/07 15:43:57 by asenat           ###   ########.fr        #
+#    Updated: 2018/09/20 15:58:09 by asenat           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,11 @@ LLFLAGS 	:=
 RM			:= rm -f
 OBJECT_DIR	:= obj
 COMP		:= $(CC) $(CFLAGS) -c -o
+ifeq ($(shell uname -s), Darwin)
+ECHO		:= echo
+else
+ECHO		:= echo -e
+endif
 #
 
 ## Colors
@@ -47,7 +52,7 @@ OBJ_DIRS	:= $(patsubst %, %/obj, $(SRC_DIRS))
 
 $(NAME): $(OBJ_DIRS) $(OBJECTS)
 	$(ARCH) $(NAME) $(OBJECTS)
-	@echo -e $(PNAME)$(GREEN) "generated !"$(RESET)
+	@$(ECHO) $(PNAME)$(GREEN) "generated !"$(RESET)
 
 ## Including compilation rules
 #
@@ -60,12 +65,12 @@ $(OBJ_DIRS):
 .PHONY: clean
 clean:
 	@$(RM) -r $(OBJ_DIRS)
-	@echo "Objects directories removed."
+	@$(ECHO) "Objects directories removed."
 
 .PHONY: fclean
 fclean: clean
 	@$(RM) $(NAME)
-	@echo -e $(PNAME) "deleted."
+	@$(ECHO) $(PNAME) "deleted."
 
 .PHONY: re
 re: fclean all
