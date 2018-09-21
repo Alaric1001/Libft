@@ -6,14 +6,15 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/26 16:21:07 by asenat            #+#    #+#             */
-/*   Updated: 2018/09/10 10:45:27 by asenat           ###   ########.fr       */
+/*   Updated: 2018/09/22 01:28:50 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_OBUFF_H
 # define FT_OBUFF_H
 
-# include "stdlib.h"
+# include <stdlib.h>
+# include <stdint.h>
 
 # define LIBFT_OBUF_SIZE 128ul
 
