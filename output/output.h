@@ -6,7 +6,7 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/09 14:59:25 by asenat            #+#    #+#             */
-/*   Updated: 2018/05/26 16:34:26 by asenat           ###   ########.fr       */
+/*   Updated: 2018/09/24 18:04:13 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,4 @@ void	ft_putwstr(wchar_t const *str);
 int		ft_putnbyteswstr(wchar_t const *str, size_t n);
 int		ft_putcolored(char const *s, char const *code, int fd);
 
-int		ft_printf(char const *format, ...);
 #endif
