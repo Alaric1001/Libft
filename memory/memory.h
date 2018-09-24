@@ -6,7 +6,7 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/09 14:23:09 by asenat            #+#    #+#             */
-/*   Updated: 2018/05/09 14:23:35 by asenat           ###   ########.fr       */
+/*   Updated: 2018/09/24 13:36:07 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 
 void	*ft_memalloc(size_t size);
+void	*ft_malloc_or_panic(size_t size);
 void	ft_memdel(void **ap);
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memcpy(void *dest, void const *src, size_t n);

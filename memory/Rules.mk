@@ -7,6 +7,9 @@ memory/$(OBJECT_DIR)/ft_doublearraydel.o: memory/ft_doublearraydel.c \
   memory/memory.h
 memory/$(OBJECT_DIR)/ft_doublearrayndel.o: memory/ft_doublearrayndel.c \
   memory/memory.h
+memory/$(OBJECT_DIR)/ft_malloc_or_panic.o: memory/ft_malloc_or_panic.c \
+  memory/memory.h output/output.h
+output/output.h:
 memory/$(OBJECT_DIR)/ft_memalloc.o: memory/ft_memalloc.c memory/memory.h
 memory/$(OBJECT_DIR)/ft_memccpy.o: memory/ft_memccpy.c memory/memory.h
 memory/$(OBJECT_DIR)/ft_memchr.o: memory/ft_memchr.c memory/memory.h

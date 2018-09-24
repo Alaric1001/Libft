@@ -3,6 +3,7 @@
 OBJ_FILES_memory := ft_bzero.o \
                     ft_doublearraydel.o \
                     ft_doublearrayndel.o \
+                    ft_malloc_or_panic.o \
                     ft_memalloc.o \
                     ft_memccpy.o \
                     ft_memchr.o \
