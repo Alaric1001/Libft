@@ -6,6 +6,7 @@ OBJ_FILES_output := ft_add_char_to_obuff.o \
                     ft_add_str_to_obuff.o \
                     ft_add_uint_base_to_obuff.o \
                     ft_add_uint_to_obuff.o \
+                    ft_file_error.o \
                     ft_flush_obuff.o \
                     ft_putchar.o \
                     ft_putchar_fd.o \

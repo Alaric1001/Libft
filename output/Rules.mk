@@ -17,9 +17,11 @@ memory/memory.h:
 string/string.h:
 output/$(OBJECT_DIR)/ft_add_uint_to_obuff.o: \
   output/ft_add_uint_to_obuff.c output/obuff.h
+output/$(OBJECT_DIR)/ft_file_error.o: output/ft_file_error.c \
+  output/output.h output/obuff.h
+output/output.h:
 output/$(OBJECT_DIR)/ft_flush_obuff.o: output/ft_flush_obuff.c \
   output/obuff.h output/output.h memory/memory.h
-output/output.h:
 output/$(OBJECT_DIR)/ft_putchar.o: output/ft_putchar.c output/output.h
 output/$(OBJECT_DIR)/ft_putchar_fd.o: output/ft_putchar_fd.c \
   output/output.h

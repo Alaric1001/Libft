@@ -34,4 +34,5 @@ void	ft_putwstr(wchar_t const *str);
 int		ft_putnbyteswstr(wchar_t const *str, size_t n);
 int		ft_putcolored(char const *s, char const *code, int fd);
 
+void	ft_file_error(const char *filename, const char *err);
 #endif
