@@ -6,7 +6,7 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/26 16:21:07 by asenat            #+#    #+#             */
-/*   Updated: 2018/09/22 01:28:50 by asenat           ###   ########.fr       */
+/*   Updated: 2018/09/24 15:38:52 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 # include <stdint.h>
 
 # define LIBFT_OBUF_SIZE 128ul
+
+# define LIBFT_FMT_HEX "0123456789abcdef"
+# define LIBFT_FMT_OCT "012345678"
 
 typedef struct	s_obuff
 {
