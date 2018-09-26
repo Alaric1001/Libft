@@ -1,2 +1,2 @@
 # Alaric's Libft
-The Library on which every 42 projects are based.
+The Library that we must use in a lot of 42 projects.
