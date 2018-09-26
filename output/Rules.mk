@@ -12,9 +12,10 @@ output/$(OBJECT_DIR)/ft_add_str_to_obuff.o: output/ft_add_str_to_obuff.c \
   output/obuff.h
 output/$(OBJECT_DIR)/ft_add_uint_base_to_obuff.o: \
   output/ft_add_uint_base_to_obuff.c output/obuff.h memory/memory.h \
-  string/string.h
+  string/string.h math/math.h
 memory/memory.h:
 string/string.h:
+math/math.h:
 output/$(OBJECT_DIR)/ft_add_uint_to_obuff.o: \
   output/ft_add_uint_to_obuff.c output/obuff.h
 output/$(OBJECT_DIR)/ft_file_error.o: output/ft_file_error.c \
