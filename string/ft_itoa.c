@@ -6,7 +6,7 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 15:58:09 by asenat            #+#    #+#             */
-/*   Updated: 2018/09/07 15:44:50 by asenat           ###   ########.fr       */
+/*   Updated: 2018/09/26 17:31:42 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char			*ft_itoa(long long n)
 	nb = n;
 	if (n < 0)
 		nb = -n;
-	len = ft_getnblen(nb) + (n < 0);
+	len = ft_get_u_nb_len(nb, 10) + (n < 0);
 	if (!(result = ft_strnew(len + 1)))
 		return (NULL);
 	if (!nb)
@@ -44,7 +44,7 @@ char			*ft_uitoa(unsigned long long nb)
 	char		*result;
 	int			len;
 
-	len = ft_getnblen(nb);
+	len = ft_get_u_nb_len(nb, 10);
 	if (!(result = ft_strnew(len + 1)))
 		return (NULL);
 	if (!nb)
