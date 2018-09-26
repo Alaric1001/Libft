@@ -11,6 +11,7 @@ OBJ_FILES_memory := ft_bzero.o \
                     ft_memcpy.o \
                     ft_memdel.o \
                     ft_memmove.o \
-                    ft_memset.o
+                    ft_memset.o \
+                    ft_realloc.o
 
 OBJECTS += $(patsubst %, memory/$(OBJECT_DIR)/%, $(OBJ_FILES_memory))

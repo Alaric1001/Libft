@@ -18,3 +18,4 @@ memory/$(OBJECT_DIR)/ft_memcpy.o: memory/ft_memcpy.c memory/memory.h
 memory/$(OBJECT_DIR)/ft_memdel.o: memory/ft_memdel.c memory/memory.h
 memory/$(OBJECT_DIR)/ft_memmove.o: memory/ft_memmove.c memory/memory.h
 memory/$(OBJECT_DIR)/ft_memset.o: memory/ft_memset.c memory/memory.h
+memory/$(OBJECT_DIR)/ft_realloc.o: memory/ft_realloc.c memory/memory.h
