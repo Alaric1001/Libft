@@ -6,7 +6,7 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/09 14:23:09 by asenat            #+#    #+#             */
-/*   Updated: 2018/09/26 10:17:42 by asenat           ###   ########.fr       */
+/*   Updated: 2018/09/28 16:36:23 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,11 @@ void	ft_bzero(void *s, size_t n);
 void	ft_doublearraydel(void ***array);
 void	ft_doublearrayndel(void ***array, size_t n);
 void	*ft_realloc(void *ptr, size_t ptr_size, size_t new_size);
+typedef struct	s_array
+{
+	size_t	nelems;
+	void	*begin;
+}				t_array;
+
 
 #endif
