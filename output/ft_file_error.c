@@ -6,7 +6,7 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/24 18:00:52 by asenat            #+#    #+#             */
-/*   Updated: 2018/09/24 18:06:27 by asenat           ###   ########.fr       */
+/*   Updated: 2018/09/28 16:36:39 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,3 @@ void	ft_file_error(const char *filename, const char *err)
 	ft_add_str_to_obuff("']\n", &buff);
 	ft_flush_obuff(&buff);
 }
-
