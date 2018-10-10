@@ -6,7 +6,7 @@
 #    By: asenat <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 17:26:46 by asenat            #+#    #+#              #
-#    Updated: 2018/09/20 15:58:09 by asenat           ###   ########.fr        #
+#    Updated: 2018/10/09 17:46:20 by asenat           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,3 +74,7 @@ fclean: clean
 
 .PHONY: re
 re: fclean all
+
+.PHONY: makedeps
+makedeps:
+	python3.7 ./gen_make_sources.py $(SRC_DIRS)
