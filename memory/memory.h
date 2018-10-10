@@ -6,7 +6,7 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/09 14:23:09 by asenat            #+#    #+#             */
-/*   Updated: 2018/09/28 16:36:23 by asenat           ###   ########.fr       */
+/*   Updated: 2018/10/09 18:22:00 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 typedef struct	s_array
 {
 	size_t	nelems;
+	size_t	selem;
 	void	*begin;
 }				t_array;
 
