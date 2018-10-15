@@ -63,6 +63,10 @@ string/$(OBJECT_DIR)/ft_strrev.o: string/ft_strrev.c string/string.h
 string/$(OBJECT_DIR)/ft_strsplit.o: string/ft_strsplit.c string/string.h
 string/$(OBJECT_DIR)/ft_strstr.o: string/ft_strstr.c string/string.h
 string/$(OBJECT_DIR)/ft_strsub.o: string/ft_strsub.c string/string.h
+string/$(OBJECT_DIR)/ft_strtolower.o: string/ft_strtolower.c \
+  string/string.h
+string/$(OBJECT_DIR)/ft_strtoupper.o: string/ft_strtoupper.c \
+  string/string.h
 string/$(OBJECT_DIR)/ft_strtrim.o: string/ft_strtrim.c string/string.h
 string/$(OBJECT_DIR)/ft_tolower.o: string/ft_tolower.c string/string.h
 string/$(OBJECT_DIR)/ft_toupper.o: string/ft_toupper.c string/string.h

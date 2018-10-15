@@ -46,6 +46,8 @@ OBJ_FILES_string := ft_atoi.o \
                     ft_strsplit.o \
                     ft_strstr.o \
                     ft_strsub.o \
+                    ft_strtolower.o \
+                    ft_strtoupper.o \
                     ft_strtrim.o \
                     ft_tolower.o \
                     ft_toupper.o \

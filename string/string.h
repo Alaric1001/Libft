@@ -6,7 +6,7 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/09 15:02:38 by asenat            #+#    #+#             */
-/*   Updated: 2018/05/09 15:03:02 by asenat           ###   ########.fr       */
+/*   Updated: 2018/10/15 14:17:58 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ char	*ft_strncappend(char *dst, char c, size_t n);
 char	*ft_removechar(char *dst, size_t loc);
 char	*ft_strescape(char const *s, char const *to_escape);
 char	*ft_strresize(char *s, size_t size);
+char	*ft_strtoupper(char *str);
+char	*ft_strtolower(char *str);
 
 /*
 ** Integer<=>String
