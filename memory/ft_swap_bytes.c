@@ -6,7 +6,7 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/16 15:39:07 by asenat            #+#    #+#             */
-/*   Updated: 2018/10/16 16:16:17 by asenat           ###   ########.fr       */
+/*   Updated: 2018/10/16 16:25:28 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,22 @@
 
 void		ft_swap_bytes(void *addr, size_t size)
 {
-	uint8_t *ptr;
+	uint8_t	*ptr;
 	uint8_t tmp;
 	size_t	lo;
-	size_t hi;
+	size_t	hi;
 
 	if (!size)
 		return ;
- 	ptr = addr;
+	ptr = addr;
 	lo = 0;
 	hi = size - 1;
 	while (hi > lo)
 	{
 		tmp = ptr[lo];
-		ptr[lo++]	= ptr[hi];
+		ptr[lo++] = ptr[hi];
 		ptr[hi--] = tmp;
 	}
-
 }
 
 uint32_t	ft_swap_uint32(uint32_t i)
