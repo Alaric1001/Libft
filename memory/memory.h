@@ -6,7 +6,7 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/09 14:23:09 by asenat            #+#    #+#             */
-/*   Updated: 2018/10/09 18:22:00 by asenat           ###   ########.fr       */
+/*   Updated: 2018/10/16 16:07:30 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define MEMORY_H
 
 # include <stdlib.h>
+# include <stdint.h>
 
 typedef struct	s_array
 {
@@ -36,5 +37,9 @@ void			ft_doublearraydel(void ***array);
 void			ft_doublearrayndel(void ***array, size_t n);
 void			*ft_realloc(void *ptr, size_t ptr_size, size_t new_size);
 void			ft_free_array(t_array *array);
+void			ft_swap_bytes(void *addr, size_t size);
+uint64_t		ft_swap_uint64(uint64_t i);
+uint32_t		ft_swap_uint32(uint32_t i);
+int32_t			ft_swap_int32(int32_t i);
 
 #endif
