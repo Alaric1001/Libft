@@ -6,7 +6,7 @@
 /*   By: asenat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/09 14:23:09 by asenat            #+#    #+#             */
-/*   Updated: 2018/10/16 16:07:30 by asenat           ###   ########.fr       */
+/*   Updated: 2019/06/04 11:35:21 by asenat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,14 @@ void			ft_swap_bytes(void *addr, size_t size);
 uint64_t		ft_swap_uint64(uint64_t i);
 uint32_t		ft_swap_uint32(uint32_t i);
 int32_t			ft_swap_int32(int32_t i);
+
+typedef struct	s_map
+{
+	uint8_t	*map;
+	size_t	size;
+}				t_map;
+
+int				ft_map_file(const char *path, t_map *map);
+void			ft_unmap_file(t_map *map);
 
 #endif

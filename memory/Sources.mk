@@ -5,6 +5,7 @@ OBJ_FILES_memory := ft_bzero.o \
                     ft_doublearrayndel.o \
                     ft_free_array.o \
                     ft_malloc_or_panic.o \
+                    ft_map_file.o \
                     ft_memalloc.o \
                     ft_memccpy.o \
                     ft_memchr.o \

@@ -12,6 +12,7 @@ memory/$(OBJECT_DIR)/ft_free_array.o: memory/ft_free_array.c \
 memory/$(OBJECT_DIR)/ft_malloc_or_panic.o: memory/ft_malloc_or_panic.c \
   memory/memory.h output/output.h
 output/output.h:
+memory/$(OBJECT_DIR)/ft_map_file.o: memory/ft_map_file.c memory/memory.h
 memory/$(OBJECT_DIR)/ft_memalloc.o: memory/ft_memalloc.c memory/memory.h
 memory/$(OBJECT_DIR)/ft_memccpy.o: memory/ft_memccpy.c memory/memory.h
 memory/$(OBJECT_DIR)/ft_memchr.o: memory/ft_memchr.c memory/memory.h
